@@ -1,0 +1,120 @@
+
+
+
+.featuretext-title {
+		position: relative;
+		width: 100%;
+		right: 20px;
+		top: 20px;
+		z-index: 2;
+}
+
+.featuretext {
+	padding: 10px;
+}
+
+.feature-spacer {
+	height: 200px;
+}
+
+aside, article {
+	float: right;
+}
+
+article {
+	width: 70%;
+}
+
+aside  {
+	width: 30%;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	color: #ffffff;
+	margin: 0;
+	padding: 10px 20px 10px 20px;
+}
+
+.bigger, .smaller {
+	display: block;
+	position: absolute;
+}
+
+.bigger {
+	background-color: rgba(236,0,140,0.7);
+	font-size: 4em;
+	top: 20px;
+	right: 75px;
+}
+
+.smaller {
+	background-color: rgba(0,174,239,0.7);
+	font-size: 3em;
+	top: 95px;
+	right: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 825px) {
+	aside, article {
+		width: 100%;
+	}
+	.slideshow {
+		width: 100%;
+		height: auto;
+	}
+	.feature-spacer {
+		height: 0px;
+	}
+	.featuretext-title {
+		position: static;
+		width: 70%;
+		height: 150px;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.bigger, .smaller {
+		position: absolute;
+	}
+	.bigger {
+		top: 10px;
+		left: 30px;
+		font-size: 3.5em;
+	}
+
+	.smaller {
+		top: 70px;
+		right: 30px;
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 500px) {
+	.center {
+		margin-top: 0px;
+	}
+	.slideshow {
+		width: 100%;
+		height: auto;
+	}
+
+	.featuretext-title {
+		height: 120px;
+	}
+
+	.bigger {
+		top: 10px;
+		left: 10px;
+		font-size: 2.5em;
+	}
+
+	.smaller {
+		top: 60px;
+		right: 10px;
+		font-size: 1.7em;
+	}
+}

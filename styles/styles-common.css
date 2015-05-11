@@ -1,0 +1,334 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 14px;
+	color: #000000;
+	margin: 0px;
+}
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+header, footer {
+	width: 100%;
+	position: relative;
+	height: 200px;
+}
+
+.mgd-logo {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 400px;
+}
+
+.mgd-logo img {
+	opacity: 0.7;
+}
+
+.frcc-logo {
+	position: absolute;
+	bottom: 55px;
+	right: 0px;
+}
+
+.mgd-title {
+	font-weight: bold;
+	position: absolute;
+	bottom: 67px;
+	left: 20px;
+	font-size: 1.4em;
+}
+
+.mini-nav {
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+
+nav {
+	position: relative;
+	top: 150px;
+	font-size: 1.5em;
+	width: 100%;
+	z-index: 1;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+input, label {
+	display: none;
+}
+
+nav ul li {
+	display: inline-block;
+	float: right;
+	line-height: 2em;
+	margin: 4px 2px 4px 2px;
+	padding: 0px 10px 0px 10px;
+}
+
+nav ul li:hover {
+	background-color: rgba(236,0,140,0.2);
+}
+
+article {
+	width:100%;
+}
+
+footer {
+	clear: both;
+	text-align: left;
+	padding: 0;
+}
+
+footer hr {
+	width: 100%;
+	border: 2px solid black;
+}
+
+footer p {
+	padding: 20px;
+}
+
+/* SLIDESHOW STYLES */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 825px) {
+	.frcc-logo {
+		display: none;
+	}
+
+	nav {
+		position: absolute;
+		margin: 0;
+		top: 27px;
+		right: 0;
+		width: 50%;
+	}
+
+	nav ul li {
+		width: 100%;
+		float: left;
+		text-align: right;
+		line-height: 1.2em;
+	}
+
+	.mgd-title {
+		position: absolute;
+		width: 75%;
+		bottom: 55px;
+	}
+
+}
+
+/* TEST */
+.btns_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 71px;
+  width: 38px;
+  background: transparent url("../images/icons/themes.gif") no-repeat left top;
+  margin-top: -45px;
+ }
+
+ .btns_nav:active, .btns_nav:hover {
+  opacity: 0.8;
+  }
+
+.btns_nav.next {
+  bottom: 0;
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+.caption {
+  position: absolute;
+  text-align: left;
+  z-index: 3;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .8);
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+ }
+
+  .icon {
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 8%;
+	margin: 10px 10px 10px 40px;
+	z-index: 3;
+}
+
+.department-heading {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	margin: 0;
+	padding: 0;
+}
+
+.caption-text {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 30px;
+	display: inline-block;
+}
+
+.center {
+	position: relative;
+	margin-top: 20px;
+	overflow: auto;
+	width: 100%;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.slideshow {
+	/*background: rgba(255,255,255,0.2);*/
+	position: relative;
+	overflow: auto;
+	z-index: 1;
+}
+
+/* Potentially styles for slide strategy */
+
+@media (max-width: 500px) {
+
+	.icon {
+		display: none;
+	}
+
+	nav {
+		position: absolute;
+		top: 60px;
+		right: 10px;
+		width: 75%;
+		background-color: rgba(255,255,255,0.9);
+		z-index: 2;
+	}
+
+	nav ul li {
+		padding: 10px 4px 10px 4px;
+		margin: 0;
+		text-align: center;
+		clear: both;
+		width: 100%;
+		border-color: white;
+		border-style: solid;
+		border-width: 1px;
+		border-top-width: 0px;
+	}
+
+	nav ul li:first-of-type {
+		border-top-width: 1px;
+	}
+
+	.mini-nav {
+		display: block;
+		position: absolute;
+		right:10px;
+		top:10px;
+		width: 50px;
+		height: 50px;
+		color: #ffffff;
+		padding:8px;
+		background-color: black;
+		font-size: 2em;
+		text-align: center;
+	}
+
+	nav ul li:hover {
+		background-color: rgba(0,0,0,0.7);
+		color: white;
+	}
+
+	.mgd-logo {
+		top: 20px;
+		width: 80%;
+	}
+
+	.mgd-title {
+	}
+
+	header {
+		padding: 0;
+	}
+
+	/* Following four styles are for folding
+	and unfolding the hamburger menu */
+	.collapse {
+  		display:block;
+	}
+
+	.collapse + input {
+	  display:none;
+	}
+
+	.collapse + input + * {
+	  display:none;
+	 }
+
+	.collapse+ input:checked + * {
+	  display:block;
+	}
+}

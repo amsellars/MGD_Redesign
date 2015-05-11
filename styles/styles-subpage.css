@@ -1,0 +1,296 @@
+/* For contact page*/
+
+.table-contact { 
+  width: 100%; 
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.table-contact td, th { 
+  padding: 6px; 
+  border: 2px solid white; 
+  text-align: left; 
+}
+
+.gallery-select {
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+	margin-right: 0.625%;
+	width: 19.5%;
+	line-height: 40px;
+	color: white;
+}
+
+#gallery-last {
+	margin-right: 0px;
+}
+
+.magenta {
+	background-color: rgba(236,0,140,0.7);
+}
+
+.cyan {
+	background-color: rgba(0,174,239,0.7);
+}
+
+.yellow {
+	background-color: rgba(255,242,0,0.7);
+	color: black;
+}
+
+.purple {
+	background-color: rgba(102,51,153,0.7);
+}
+
+.green {
+	background-color: rgba(0,166,81,0.7);
+}
+
+/* For programs page */
+
+article ul {
+	list-style: none; 
+}
+
+article ul li a {
+	color: #2E0854;
+	font-weight: bold;
+}
+
+article ul li a:hover {
+	color: #663399;
+}
+
+#schedule {
+	 background: url("../images/30x30.gif") no-repeat center center;
+}
+
+
+/* For faculty page */
+
+.bio {
+	position: relative;
+	margin-bottom: 40px;
+	padding: 20px;
+	border: 1px solid #C0C0C0;
+}
+
+.bio img {
+	display: block;
+	width: 200px;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.letter {
+	position: absolute;
+	bottom:5px;
+	right: 0px;
+	z-index: -1;
+	font-family: 'Raleway', sans-serif;
+	line-height: .7em;
+	font-size: 30em;
+}
+
+.l-magenta {
+	color: rgba(236,0,140,0.2);
+}
+
+.l-cyan {
+	color: rgba(0,174,239,0.2);
+}
+
+.l-yellow {
+	color: rgba(255,242,0,0.2);
+}
+
+/* Older stuff */
+
+.banner {
+	background-color: black;
+	line-height: 2em;
+	width: 100%;
+	font-size: 1.5em;
+	margin-top: 25px;
+	padding-left: 10px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.cap {
+	display: inline-block;
+	font-weight: bold;
+	line-height: 0.8em;
+	border: 2px solid white;
+	padding: 5px 7px 5px 7px;
+	margin-right: 5px;
+	letter-spacing: 0px
+}
+
+.slide2 {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.one, .two {
+	width: 50%;
+	float:left;
+	padding: 20px;
+}
+
+h1 {
+	color: #663399;
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p a {
+	color: #2E0854;
+	font-weight: bold;
+}
+
+/* Media query for table resize*/
+@media (max-width: 660px) {
+	.gallery-select {
+		clear: both;
+		width: 100%;
+		margin: 0 0 3px 0;
+	}
+
+	.gallery-select:nth-of-type(2) {
+		margin-top: 3px;
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	table {
+		width: 700px;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.magentaHeadings { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+		border: none; 
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 500px) {
+	.banner {
+		margin-top: 0px;
+	}
+	.one, .two {
+		width: 100%;
+	}
+}
+h1 {
+	color: #663399;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p a {
+	color: #2E0854;
+	font-weight: bold;
+}
+
+/* Media query for table resize*/
+@media (max-width: 660px) {
+	.gallery-select {
+		clear: both;
+		width: 100%;
+		margin: 0 0 3px 0;
+	}
+
+	.gallery-select:nth-of-type(2) {
+		margin-top: 3px;
+	}
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	table {
+		width: 700px;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.magentaHeadings { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+		border: none; 
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+}
+
+@media (max-width: 500px) {
+	.banner {
+		margin-top: 0;
+	}
+	.one, .two {
+		width: 100%;
+	}
+}
+

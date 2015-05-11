@@ -1,0 +1,22 @@
+/* TEAM */
+Student: Rachel Tschanz
+Site: raedesign.org, rt@raedesign.org
+Twitter: @hiiamabat
+Location: Denver, CO, USA
+
+Student: Brian Roberg
+email: briandroberg@gmail.com
+Location: Longmont, CO, USA
+
+Student: Allison Cavis
+email: allisoncavis@gmail.com
+Location: Lyons, CO, USA
+
+/* THANKS */
+Name: name or url
+
+/* SITE */
+Last update: 2015/05/06
+Standards: HTML5, CSS3,..
+Components: Modernizr, jQuery, etc.
+Software:Dreamweaver, Github, netbeans, notepad++
