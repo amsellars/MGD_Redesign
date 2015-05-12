@@ -12,6 +12,10 @@ Student: Allison Cavis
 email: allisoncavis@gmail.com
 Location: Lyons, CO, USA
 
+Student: Anna Sellars
+email: amsellars@msn.com
+Location: Thornton, CO, USA
+
 /* THANKS */
 Name: name or url
 
